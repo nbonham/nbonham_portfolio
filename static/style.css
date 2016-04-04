@@ -1,0 +1,299 @@
+/* .nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+*/
+
+/* social media icon stylings for global footer */
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #FFF;
+  background: #101010;
+  -webkit-font-smoothing: antialiased;
+}
+
+.footer-social-icons {
+	width: 185px;
+	display:block;
+  margin: 0 auto;
+}
+
+.social-icon {
+	color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.social-icons {
+	margin-top: 2px;
+}
+
+.social-icons li {
+	vertical-align: center;
+	display: inline;
+}
+
+.social-icons a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.fa-facebook {
+	padding:10px 14px 7px 14px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+  	/* background-color: #322f30; */
+}
+
+.fa-facebook:hover {
+	background-color: #3d5b99;
+}
+
+.fa-linkedin {
+	padding:10px 11px 8px 11px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+  	/* background-color: #322f30; */
+}
+
+.fa-linkedin:hover {
+	background-color: #0073a4;
+}
+
+.fa-google-plus {
+	padding:10px 10px 7px 10px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+  	/* background-color: #322f30; */
+}
+
+.fa-google-plus:hover {
+	background-color: #e25714;
+}
+
+
+/* adjust background color */
+body {
+    background-color: #101010;
+}
+
+.home-page-info{
+  color: #FFFFFF;
+}
+
+.home-page-info h3 {
+  font-weight: bold;
+}
+
+/* navbar CSS */
+.navbar-inverse .navbar-nav a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/* styling for global navigation links */
+.navbartext.active{
+    color: #ffff00;
+    border-bottom-style: dotted;
+    border-bottom-color: #ffff00;
+    font-weight: bold;
+}
+
+.glyphicon.active{
+    color: #ffff00;
+}
+
+/* jumbotron CSS */
+.jumbotron {
+  background-image:url('/static/austin-bridge.jpg');
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.jumbotron .container {
+  position: relative;
+  /* top:50px; */
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;
+  /* font-family: 'Shift', sans-serif; */
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+    text-align: left;
+}
+
+
+/* styling for the carousel */
+.carousel {
+  padding-bottom: 20px;
+  vertical-align: middle;
+}
+
+div.c-wrapper{
+   width: 100%;
+   margin: auto;
+}
+
+/* disable the carousel on mobile devices */
+@media (max-width:992px) {
+  #otidetails {
+    font-size: 1.2em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+p {
+    font-size: 1.2em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 768px){
+  .carousel {
+      display:none !important;
+  }
+  .jumbotron {
+      display:none !important;
+  }
+  #otidetails {
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+  }
+  p {
+      font-size: 1.4em;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+    }
+  }
+
+
+/* form entry fields styling */
+textarea:focus, input:focus {
+	border: 2px solid #900;
+}
+
+/* lightbox CSS */
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;
+}
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -15px;
+    right: -55px;
+
+    z-index:1032;
+}
+
+/* https://www.youtube.com/watch?v=lOlHFCvpR-k */
+/* transform thumbnails on hover */
+.thumbnail img:hover{
+  transform: scale(1.1);
+}
+
+.thumbnail img {
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+
+.thumbnail {
+  overflow: hidden;
+}
+
+.thumbnail {
+  max-height: 40em;
+  max-width: 50em;
+  overflow: hidden;
+}
+
+/* styling the projects aka OTI page */
+#otidetails{
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  background-color: #ffffff;
+  color: #15151e;
+  outline-style: double;
+  outline-color: #15151e;
+  outline-width: thick;
+}
+
+#otidetails.ul {
+    list-style-type: circle;
+}
+
+.oti-pictures{
+  margin-left: 12vw;
+  margin-right: 12vw;
+}
+
+.otiimage{
+  display: inline-block;
+  float: center;
+  width: 70vw;
+}
+
+/* making the youtube videos responsive */
+/* https://coolestguidesontheplanet.com/videodrome/youtube/ */
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}

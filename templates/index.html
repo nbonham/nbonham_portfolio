@@ -1,0 +1,55 @@
+{% extends "templates/base.html" %}
+
+{% block title %}
+    HOME
+{% endblock %}
+
+{% block header %}
+    <h1>Nate Bonham</h1>
+    <h2>Home</h2>
+{% endblock %}
+
+<!-- not using this
+{% block jumbostuff %}
+<h1>Bringing people, process and technology together</h1>
+{% endblock %}
+-->
+
+{% block content %}
+  <div class="home-page-info">
+	  <div class="container">
+
+      <div class="row">
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="projects"><img src="static/new-america.jpg" alt="New America building">
+            </a>
+          </div>
+            <h3>OTI</h3>
+			        <p>Learn about my alternative spring break project where I helped to faciliate user feedback on the OTI website.</p>
+			           <p><a href="projects">Learn more about OTI</a></p>
+	    </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="photos"><img src="static/bird-small.jpg" alt="Small bird on a tree">
+            </a>
+          </div>
+            <h3>Photography</h3>
+			        <p>I am an avid amateur photographer and love merging my passion for the outdoors with photography.</p>
+			           <p><a href="projects">See my photos</a></p>
+	    </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail">
+        <a href="contact"><img src="static/mtsthelens-small.jpg" alt="Photo of Mt St Helens from the north side"></a>
+        </div>
+           <h3>About Me</h3>
+			        <p>Explore my love of retro gaming, hiking, and metal.</p>
+			           <p><a href="contact">Go here to learn more about my interests</a></p>
+		    </div>
+	    </div>
+	  </div>
+	</div>
+{% endblock %}

@@ -1,0 +1,163 @@
+{% extends "templates/base.html" %}
+
+{% block title %}
+    PHOTOS
+{% endblock %}
+
+{% block header %}
+    <h1>Photos</h1>
+{% endblock %}
+
+<!--
+{% block jumbostuff %}
+  <h1>In my spare time I love taking photos</h1>
+{% endblock %}
+-->
+
+{% block content %}
+
+<!-- http://bootsnipp.com/snippets/featured/bootstrap-lightbox -->
+
+<div class="photomessage">
+  <h2 class="text-center">My Photography</h2>
+  <p class="text-center">In my spare time I love working on photography.
+    Check out below for various photos that I have taken over the last few years.</p>
+  <br>
+</div>
+
+<div class="container">
+
+
+<!--
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+            <img src="static/austin-bridge.jpg" alt="Austin walking bridge">
+            <div class="carousel-caption">
+            Austin walking bridge
+            </div>
+        </a>
+    </div>
+-->
+<!-- about adding titles
+https://developer.mozilla.org/en-US/Learn/HTML/Multimedia_and_embedding/Images_in_HTML
+-->
+
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+            <img src="static/austin-skyline.jpg" alt="Austin skyline at dusk">
+            <div class="carousel-caption">
+            Austin skyling at dusk
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+            <img src="static/london.jpg" alt="London eye at night">
+            <div class="carousel-caption">
+            London eye at night
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+            <img src="static/hawthorne-bridge.jpg" alt="Hawthorne bridge in downtown Portland">
+            <div class="carousel-caption">
+            Hawthorne bridge
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+            <img src="static/deer-cemetery.jpg" alt="A deer in the Forest Hill Cemetery">
+            <div class="carousel-caption">
+            Fawn of the dead
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+            <img src="static/gator.jpg" alt="A gator at the Fort Worth zoo">
+            <div class="carousel-caption">
+            A gator at the Fort Worth zoo
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+            <img src="static/lake-michigan.jpg" alt="Gentle waves on Lake Michigan">
+            <div class="carousel-caption">
+            Gentle waves on Lake Michigan
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+            <img src="static/mackinac.jpg" alt="Mackinac bridge at sunset">
+            <div class="carousel-caption">
+            Mackinac bridge at sunset
+            </div>
+        </a>
+    </div>
+
+<!--
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+            <img src="static/mtsthelens.jpg" alt="Mt St Helens from the south side">
+            <div class="carousel-caption">
+            Mt St Helens from the south side
+            </div>
+        </a>
+    </div>
+-->
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+            <img src="static/ecola-forest.jpg" alt="Ecola State Park in Oregon">
+            <div class="carousel-caption">
+            Ecola State Park in Oregon
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+            <img src="static/small-stream.jpg" alt="Stream while hiking in Oregon">
+            <div class="carousel-caption">
+            Stream while hiking in Oregon
+            </div>
+        </a>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+            <img src="static/bee.jpg" alt="A bee on a flower during spring">
+            <div class="carousel-caption">
+            A bee on a flower during spring
+            </div>
+        </a>
+    </div>
+
+
+</div> <!-- closes the container -->
+
+<!-- still running into two issues, validator does not like the placeholder for img source, but that is how this works... -->
+<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" >
+    <div class="modal-dialog">
+        <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="#" alt="#" />
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}

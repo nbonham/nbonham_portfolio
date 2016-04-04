@@ -1,0 +1,79 @@
+{% extends "templates/base.html" %}
+
+{% block title %}
+    ABOUT ME
+{% endblock %}
+
+{% block header %}
+    <h1>About Me</h1>
+{% endblock %}
+
+<!--
+{% block jumbostuff %}
+  <h1>use the form below to shoot me a message</h1>
+{% endblock %}
+-->
+
+{% block content %}
+
+<!-- realized I needed some php skills to get this to work, so am converting this into an about me page
+<div class="form-entry">
+
+  <h2>Contact me by completing the form below</h2>
+
+    <form action="MAILTO:nbonham@umich.edu" method="post" enctype="text/plain">
+      Name:<br>
+    <input type="text" name="name" value="your name"><br>
+      E-mail:<br>
+    <input type="text" name="mail" value="your email"><br>
+      Comment:<br>
+    <input type="text" name="comment" value="your comment" size="50"><br><br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+
+  </div>
+</form>
+-->
+
+<div class="container">
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<h3>Hiking</h3>
+				<p>I am a huge fan of the outdoors and take every advantage to go hiking that I can get, especially while I lived in Oregon.
+           Though I sadly do not live there anymore, I attempt to fly out at least once a year to go hiking in amazing places,
+           such as around Mt St Helens, featured in the picture and documentary below.</p>
+          <div class="video-container">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/KlbnLnHSRzE" allowfullscreen></iframe>
+          </div>
+			</div>
+
+    	<div class="col-xs-12 col-sm-6 col-md-4">
+				<h3>Retro Gaming</h3>
+				<p>In my spare time I collect retro video games and have over 100 original NES and SNES games, some of which I have owned since
+          being a kid. Among these, Ninja Gaiden is one of my favorites to play and I have been aiming to complete this game in less than
+          20 minutes. A huge accomplishment, but nothing compared to some of these speed runners!</p>
+          <div class="video-container">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/XrODauyuMgY" allowfullscreen></iframe>
+          </div>
+			</div>
+
+    	<div class="col-xs-12 col-sm-6 col-md-4">
+				<h3>Metal</h3>
+				<p>My favorites incldue Iron Maiden, Blind Guardian, Agalloch, Behemoth and way too many other bands to list. By far the best genre
+          of music ever invented is metal. If you disagree, I feel sorry for your ears and, if you'd reconsider, may I present to you The Trooper by Iron Maiden. Simply one of the best
+          metal songs around!</p>
+          <div class="video-container">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/X4bgXH3sJ2Q" allowfullscreen></iframe>
+          </div>
+			</div>
+		</div>
+	</div>
+
+  <br>
+
+  <img src="static/sthelens-panorama.jpg" alt="Panorama of hiking by Mt St Helens"  class="img-responsive center-block">
+
+
+
+{% endblock %}

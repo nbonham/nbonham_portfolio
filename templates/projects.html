@@ -1,0 +1,135 @@
+{% extends "templates/base.html" %}
+
+{% block title %}
+    OTI
+{% endblock %}
+
+{% block header %}
+    <h1>Projects</h1>
+{% endblock %}
+
+<!--
+{% block jumbostuff %}
+  <h1>Check below for projects I have been working on</h1>
+{% endblock %}
+-->
+
+{% block content %}
+<!-- information for responsive images
+http://stackoverflow.com/questions/18462808/responsive-image-align-center-bootstrap-3 -->
+
+<section id = "otidetails">
+    <a href="https://www.newamerica.org/oti/"><img src="static/new-america-full.jpg" alt="New America building"
+      class="img-responsive center-block">
+    </a>
+    <br>
+  <h2>OTI</h2>
+  <p>During the Winter 2016 semester I participated in an alternative spring break program, helping the
+    Open Technology Institute faciliate user experience on their website and products</p>
+  <h3>OTI Project Sections:</h3>
+  <ol>
+    <li>About OTI</li>
+    <li>Objectives</li>
+    <li>Thought Process</li>
+    <li>Recommendations</li>
+  </ol>
+
+  <div>
+     <h3>1. About OTI</h3>
+     <p>OTI works at the intersection of technology and policy to ensure that every community has equitable access to
+       digital technology and its benefits. They promote universal access to communications technologies that are both open and secure,
+       using a multidisciplinary approach that brings together advocates, researchers, organizers, and innovators.</p>
+  </div>
+
+  <div>
+     <h3>2. Objectives</h3>
+     <p>In preparation for a new website redesign, The Open Technology Institute was interested in facilitating user
+       experience on their website. To that end, the following tasks were performed:</P>
+      <ul>
+        <li>Partner with the web development team in conducting heuristic evaluations on redesign prototypes</li>
+        <li>Analyze interview data collected by the web development team</li>
+        <li>Recommend best practices for conducting training as the roll out the Wagtail CMS</li>
+        <li>Identify potential pain points in the new CMS tool, Wagtail</li>
+        <li>Provide SEO and CMS utilization recommendations based off Google Analytics analysis</li>
+        <li>Conduct a heuristic analysis of Measurement Lab (opens in new window) website</li>
+        <li>Provide input into information architecture and FAQ revisions for the Measurement Lab website</li>
+      </ul>
+  </div>
+
+  <div>
+     <h3>3. Thought Process</h3>
+     <p>Before tackling any of these objectives, it was imperative to meet with the two individuals responsible for the web
+       development team in order to understand their thought processes and research they have already gathered.
+       Additionally, it was vital to understand what was and was not possible within their new CMS so that recommendations
+       could be provided that were actionable rather than merely hypothetical and not feasible.
+     </p><br>
+     <p>Similarly, in order to successfully contribute to the Measurement Lab tasks, an interview was conducted with
+        the individual responsible for this project at OTI. Upon gathering feedback, background information and
+        prioritizing their needs, work was conducted to provide actionable recommendations that would assist them
+        with a website redesign.
+      </p>
+  </div>
+
+  <div>
+     <h3>4. Recommendations</h3>
+      <ul>
+        <li>Consider changing "our work" in the sub navigation to something more descriptive, such as "publications." The potential problem is that the page presents two links called "our work," one in the sub navigation and one in the global navigation, that  take people to two different places (false duplicate links).</li>
+        <li>Ensure that the sub-navigation page is highlighted when a user is currently on that page. In this example, "issues" on the left-hand bar should be highlighted. This will help orient the user and prevent self-referential clicking.</li>
+        <li>On the search results listing page, consider adding a "view all" and change the circles to numbers while adding a "page" label so that a user knows precisely how many pages exist and which page they are on.</li>
+        <li>Increase the size of logos on the left-hand navigation bar. As is, the user's eye is likely to view the main headings such as "Initiatives and Projects" or "Events" as these font sizes are larger than that of "International Security." Increasing font size will also assist in the visual hierarchy of information.</li>
+        <li>Training on Wagtail should emphasize use of description and metatagging in order to bolster New America’s presence in organic search.</li>
+        <li>Consider doing three trainings for Wagtail</li>
+        <li>Create a "felt experience" training by having people bring their laptops and create a page using the new CMS during the training session.</li>
+        <li>Review/improve title tags and meta description content</li>
+        <li>Incorporate rich snippets, especially authorship and breadcrumbs, in the Google listing</li>
+        <li>Snippet text with calls to action</li>
+      </ul>
+  </div>
+  <br>
+  <img src="static/oti-boss.jpg" alt="Taking a break at OTI"
+    class="img-responsive center-block">
+  <br>
+
+</section>
+
+<!-- will revisit this later
+  <div class="home-page-info">
+	  <div class="container">
+
+      <div class="row">
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="projects"><img src="static/oti-boss.jpg" alt="OTI picture with the boss">
+            </a>
+          </div>
+            <h3>Group Photo</h3>
+			        <p>Taking a break to play around on the lego board.</p>
+	    </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="projects"><img src="static/mlab01.jpg" alt="Navigation on mLab">
+            </a>
+          </div>
+            <h3>mLab Navigation/h3>
+			        <p>Understanding navigation on the mLab product.</p>
+	    </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="projects"><img src="static/mlab02.jpg" alt="Site Organization on mLab">
+            </a>
+          </div>
+            <h3>mLab Site Organization</h3>
+			        <p>Understanding site organization on the mLab product.</p>
+	    </div>
+
+	    </div>
+	  </div>
+	</div>
+-->
+
+
+
+{% endblock %}
